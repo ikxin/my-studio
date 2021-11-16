@@ -6,10 +6,40 @@ html, body {
 
 header {
     height: 11.73333vw;
-    background-color: cyan;
+    display: flex;
+    // 横向对齐方式
+    justify-content: space-between;
+    // 纵向对齐方式
+    align-items: center;
+    // 左右边距
+    padding: 0 4.8vw 0 3.06667vw;
+    .icon-bilibili {
+        font-size: 7.73333vw;
+        color: #fb7299;
+    }
+    .icon-search {
+        height: 5.06667vw;
+        width: 5.06667vw;
+        color: #ccc;
+    }
+    >div {
+        display: flex;
+        align-items: center;
+    }
 }
 
 nav {
     height: 10.66667vw;
     background-color: pink;
+}
+
+.btn-login {
+    height: 6.4vw;
+    width: 6.4vw;
+    margin-left: 5.33333vw;
+}
+.btn-app {
+    height: 6.26667vw;
+    width: 19.06667vw;
+    margin-left: 5.33333vw;
 }
