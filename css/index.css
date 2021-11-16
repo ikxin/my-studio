@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+header {
+  height: 11.73333vw;
+  background-color: cyan;
+}
+nav {
+  height: 10.66667vw;
+  background-color: pink;
+}
