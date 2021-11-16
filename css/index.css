@@ -16,9 +16,18 @@ header .icon-bilibili {
   color: #fb7299;
 }
 header .icon-search {
-  height: 5.06667vw;
-  width: 5.06667vw;
+  font-size: 5.06667vw;
   color: #ccc;
+}
+header .btn-login {
+  height: 6.4vw;
+  width: 6.4vw;
+  margin-left: 5.33333vw;
+}
+header .btn-app {
+  height: 6.26667vw;
+  width: 19.06667vw;
+  margin-left: 5.33333vw;
 }
 header > div {
   display: flex;
@@ -26,15 +35,13 @@ header > div {
 }
 nav {
   height: 10.66667vw;
-  background-color: pink;
+  display: flex;
+  justify-content: space-around;
+  line-height: 10.66667vw;
+  color: #505050;
+  font-size: 3.73333vw;
+  border-bottom: 0.13333vw #efefef solid;
 }
-.btn-login {
-  height: 6.4vw;
-  width: 6.4vw;
-  margin-left: 5.33333vw;
-}
-.btn-app {
-  height: 6.26667vw;
-  width: 19.06667vw;
-  margin-left: 5.33333vw;
+nav .active {
+  color: #fb7299;
 }

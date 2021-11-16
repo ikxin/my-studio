@@ -18,11 +18,20 @@ header {
         color: #fb7299;
     }
     .icon-search {
-        height: 5.06667vw;
-        width: 5.06667vw;
+        font-size: 5.06667vw;
         color: #ccc;
     }
-    >div {
+    .btn-login {
+        height: 6.4vw;
+        width: 6.4vw;
+        margin-left: 5.33333vw;
+    }
+    .btn-app {
+        height: 6.26667vw;
+        width: 19.06667vw;
+        margin-left: 5.33333vw;
+    }
+    > div {
         display: flex;
         align-items: center;
     }
@@ -30,16 +39,14 @@ header {
 
 nav {
     height: 10.66667vw;
-    background-color: pink;
-}
-
-.btn-login {
-    height: 6.4vw;
-    width: 6.4vw;
-    margin-left: 5.33333vw;
-}
-.btn-app {
-    height: 6.26667vw;
-    width: 19.06667vw;
-    margin-left: 5.33333vw;
+    display: flex;
+    // 横向分布对齐
+    justify-content: space-around;
+    line-height: 10.66667vw;
+    color: #505050;
+    font-size: 3.73333vw;
+    border-bottom: 0.13333vw #efefef solid;
+    .active {
+        color: #fb7299;
+    }
 }
