@@ -88,3 +88,9 @@ nav .active {
 .list .item .count-box > span .iconfont {
   margin-right: 1.73333vw;
 }
+footer {
+  font-size: 3.73333vw;
+  color: #999;
+  margin: 5.33333vw 0;
+  text-align: center;
+}
