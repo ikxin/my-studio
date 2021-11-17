@@ -94,3 +94,9 @@ footer {
   margin: 5.33333vw 0;
   text-align: center;
 }
+.fixed-top {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: white;
+}
