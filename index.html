@@ -24,7 +24,7 @@
 
             <!-- 导航区域 -->
             <nav>
-                <span :class="index === activeIndex ? 'active' : ''" v-for="(item, index) in navList">{{ item.name }}</span>
+                <span :class="index === activeIndex ? 'active' : ''" v-for="(item, index) in navList" @click="changeNav(index)">{{ item.name }}</span>
                 <!-- <span>动画</span>
                 <span>番剧</span>
                 <span>国创</span>
@@ -295,8 +295,16 @@
                     { id: 2, name: '动画'},
                     { id: 3, name: '番剧'},
                     { id: 4, name: '国创'},
-                    { id: 5, name: '音乐'}
+                    { id: 5, name: '音乐'},
+                    { id: 6, name: '舞蹈'}
                 ]
+            },
+            methods: {
+                // 点击切换导航
+                changeNav(index) {
+                    // 赋值到activeIndex
+                    this.activeIndex = index
+                }
             }
         })
     </script>
