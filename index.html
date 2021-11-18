@@ -12,7 +12,7 @@
 <body>
     <div id="app">
         <div class="fixed-top">
-        <!-- 头部区域 -->
+            <!-- 头部区域 -->
             <header>
                 <span class="iconfont icon-bilibili"></span>
                 <div>
@@ -46,9 +46,7 @@
                         {{ item.video_review }}
                     </span>
                 </div>
-                <div class="title">
-                    {{ item.title }}
-                </div>
+                <div class="title">{{ item.title }}</div>
             </div>
         </div>
 
@@ -72,6 +70,7 @@
             created() {
                 // 调用initNavList方法
                 this.initNavList()
+                this.getVideoListByNavId(1)
             },
             methods: {
                 // 点击切换导航
@@ -91,9 +90,9 @@
                     })
                 },
                 // 请求视频列表数据
-                getVideoListByNavId() {
+                getVideoListByNavId(navId) {
                     // 获取选中频道id
-                    const id = this.navList[this.activeIndex].id
+                    const id = navId || this.navList[this.activeIndex].id
                     // console.log(id)
                     axios({
                         method: 'GET',
