@@ -290,20 +290,27 @@
                 // 选中索引
                 activeIndex: 0,
                 // 频道列表
-                navList: [
-                    { id: 1, name: '首页'},
-                    { id: 2, name: '动画'},
-                    { id: 3, name: '番剧'},
-                    { id: 4, name: '国创'},
-                    { id: 5, name: '音乐'},
-                    { id: 6, name: '舞蹈'}
-                ]
+                navList: []
+            },
+            created() {
+                // 调用initNavList方法
+                this.initNavList()
             },
             methods: {
                 // 点击切换导航
                 changeNav(index) {
                     // 赋值到activeIndex
                     this.activeIndex = index
+                },
+                // 请求频道列表
+                initNavList() {
+                    axios({
+                        method: 'GET',
+                        url: 'https://www.escook.cn/channels'
+                    }).then((result) => {
+                        // console.log(result)
+                        this.navList = result.data
+                    })
                 }
             }
         })
