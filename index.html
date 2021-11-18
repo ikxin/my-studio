@@ -25,11 +25,6 @@
             <!-- 导航区域 -->
             <nav>
                 <span :class="index === activeIndex ? 'active' : ''" v-for="(item, index) in navList" @click="changeNav(index)">{{ item.name }}</span>
-                <!-- <span>动画</span>
-                <span>番剧</span>
-                <span>国创</span>
-                <span>音乐</span>
-                <span>舞蹈</span> -->
             </nav>
         </div>
 
@@ -290,7 +285,9 @@
                 // 选中索引
                 activeIndex: 0,
                 // 频道列表
-                navList: []
+                navList: [],
+                // 视频列表
+                videoList:[]
             },
             created() {
                 // 调用initNavList方法
@@ -301,6 +298,7 @@
                 changeNav(index) {
                     // 赋值到activeIndex
                     this.activeIndex = index
+                    this.getVideoListByNavId()
                 },
                 // 请求频道列表
                 initNavList() {
@@ -310,6 +308,22 @@
                     }).then((result) => {
                         // console.log(result)
                         this.navList = result.data
+                    })
+                },
+                // 请求视频列表数据
+                getVideoListByNavId() {
+                    // 获取选中频道id
+                    const id = this.navList[this.activeIndex].id
+                    // console.log(id)
+                    axios({
+                        method: 'GET',
+                        url: 'https://www.escook.cn/videos',
+                        params: {
+                            channel_id: id
+                        }
+                    }).then((result) => {
+                        // console.log(result)
+                        this.videoList = result.data
                     })
                 }
             }
