@@ -1,0 +1,681 @@
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* 左侧模块 */
+.left {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    border-right: 1px solid #ededed;
+}
+
+.left header {
+    box-sizing: border-box;
+    padding: 24px;
+    width: 100%;
+    height: 96px;
+}
+
+.left header .logo {
+    float: left;
+    margin-right: 12px;
+    width: 36px;
+}
+
+.left header .logo img {
+    width: 36px;
+}
+
+.left header ul li {
+    display: flex;
+    float: left;
+    padding: 5px 10px;
+    align-items: center;
+    height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.left header .menu {
+    float: right;
+    padding: 6px 0;
+}
+
+.left header .menu img {
+    width: 24px;
+}
+
+.left footer {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 96px);
+    padding-left: 84px;
+}
+
+.left footer .cont .text {
+    margin-bottom: 24px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.left footer .cont .login {
+    display: flex;
+    align-items: center;
+    height: 39px;
+}
+
+.left footer .cont .login img {
+    margin-right: 4px;
+    width: 28px;
+}
+
+.left footer .cont .login a {
+    display: flex;
+    align-items: center;
+}
+
+.left footer .cont .login a span {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 24px;
+    color: #00a862;
+}
+
+.left footer .cont .login>span {
+    padding: 2px 12px;
+    border: 1px solid #00a862;
+    border-radius: 20px;
+    line-height: 24px;
+    color: #00a862;
+}
+
+/* 右侧模块 */
+.right {
+    height: 2000px;
+}
+
+.right .right-head {
+    height: 183px;
+}
+
+.right .right-head header {
+    box-sizing: border-box;
+    padding: 16px;
+    width: 100%;
+    height: 80px;
+}
+
+.right .right-head header .logo {
+    float: left;
+    margin-right: 12px;
+    width: 36px;
+}
+
+.right .right-head header .logo img {
+    width: 36px;
+}
+
+.right .right-head header ul li {
+    display: flex;
+    float: left;
+    padding: 5px 10px;
+    align-items: center;
+    height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.right .right-head header .menu {
+    float: right;
+    padding: 6px 0;
+}
+
+.right .right-head header .menu img {
+    width: 24px;
+}
+
+.right .right-head footer {
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    width: 100%;
+    height: 103px;
+}
+
+.right .right-head footer .cont .text {
+    margin-bottom: 16px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.right .right-head footer .cont .login {
+    display: flex;
+    align-items: center;
+    height: 39px;
+}
+
+.right .right-head footer .cont .login img {
+    margin-right: 4px;
+    width: 28px;
+}
+
+.right .right-head footer .cont .login a {
+    display: flex;
+    align-items: center;
+}
+
+.right .right-head footer .cont .login a span {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 24px;
+    color: #00a862;
+}
+
+.right .right-head footer .cont .login>span {
+    padding: 2px 12px;
+    border: 1px solid #00a862;
+    border-radius: 20px;
+    line-height: 24px;
+    color: #00a862;
+}
+
+.right .right-head-min {
+    box-sizing: border-box;
+    padding: 16px 16px 0;
+    width: 100%;
+    height: 62px;
+}
+
+.right .right-head-min .text {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.right .banner {
+    width: 100%;
+}
+
+.right .banner img {
+    width: 100%;
+}
+
+.right .promotion {
+    box-sizing: border-box;
+    padding: 24px 0;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.right .promotion .pro-main {
+    margin: 0;
+}
+
+.right .promotion .pro-main div {
+    margin: 0;
+    padding: 12px;
+}
+
+.right .promotion .pro-main div img {
+    width: 100%;
+}
+
+.right .club {
+    width: 100%;
+    height: 247px;
+}
+
+.right .club .club-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 768px;
+    height: 247px;
+}
+
+.right .club .club-main div:nth-of-type(1) {
+    box-sizing: border-box;
+    padding: 36px 0;
+    width: 360px;
+    height: 247px;
+}
+
+.right .club .club-main div:nth-of-type(1) h2 {
+    box-sizing: border-box;
+    padding-bottom: 18px;
+    font-size: 22px;
+}
+
+.right .club .club-main div:nth-of-type(1) p {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #0000008f;
+    line-height: 30px;
+}
+
+.right .club .club-main div:nth-of-type(1) p a {
+    color: #dfc011;
+}
+
+.right .club .club-main div:nth-of-type(1) span {
+    display: block;
+    width: 360px;
+    height: 39px;
+}
+
+.right .club .club-main div:nth-of-type(1) span a {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 6px 18px;
+    border: 1px solid #00A862;
+    border-radius: 48px;
+    color: #00A862;
+}
+
+.right .club .club-main div:nth-of-type(2) {
+    width: 236px;
+    height: 72px;
+}
+
+.right .club .club-main div:nth-of-type(2) img {
+    width: 236px;
+    height: 72px;
+}
+
+.right .selected {
+    box-sizing: border-box;
+    padding: 36px 0;
+    width: 100%;
+    height: 413px;
+    background-color: #f7f7f7;
+}
+
+.right .selected .select-m {
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+}
+
+.right .selected .select-m h2 {
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.right .selected .select-m p {
+    font-size: 16px;
+    color: #dd82828f;
+}
+
+.right .selected .select-m ul {
+    box-sizing: border-box;
+    padding-top: 48px;
+    height: 268px;
+}
+
+.right .selected .select-m li {
+    box-sizing: border-box;
+    padding: 12px;
+    width: 186px;
+    height: 200px;
+
+}
+
+.right .selected .select-m li :hover {
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+    transform: translate3d(0, -2px, 0);
+    transition: all 1s;
+}
+
+.right .selected .select-m li>a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 6px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.right .selected .select-m li>a img {
+    margin: -36px 0 -24px;
+    height: 72px;
+}
+
+.right .selected .select-m li>a h4 {
+    margin: 26px 0 8px;
+    font-size: 16px;
+    color: #000000de;
+    font-weight: bold;
+}
+
+.right .selected .select-m li>a {
+    text-decoration: none;
+}
+
+.right .selected .select-m li>a p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.right .selected .select-m li>a p:nth-of-type(2) {
+    color: #c2a611;
+}
+
+.right .row {
+    margin: 0;
+}
+
+.right .coffeehouse {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.right .coffeehouse h4 {
+    margin: 0 auto;
+    height: 73px;
+    text-align: center;
+}
+
+.right .coffeehouse h4 p:nth-of-type(1) {
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.right .coffeehouse h4 p:nth-of-type(2) {
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.right .coffeehouse .coffee-m {
+    position: relative;
+    width: 100%;
+    height: 249px;
+    overflow: hidden;
+}
+
+.right .coffeehouse .coffee-m ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1248px;
+    height: 225px;
+    transition: all 1s;
+}
+
+.right .coffeehouse .coffee-m ul li {
+    float: left;
+    box-sizing: border-box;
+    margin: 12px;
+    padding: 18px;
+    width: 288px;
+    height: 225px;
+}
+
+.right .coffeehouse .coffee-m ul li:nth-child(1) {
+    background: url(../img/coffee1.jpg) no-repeat 0 0 / 288px 168px;
+}
+
+.right .coffeehouse .coffee-m ul li:nth-child(2) {
+    background: url(../img/coffee2.jpg) no-repeat 0 0 / 288px 168px;
+}
+
+.right .coffeehouse .coffee-m ul li:nth-child(3) {
+    background: url(../img/coffee3.jpg) no-repeat 0 0 / 288px 168px;
+}
+
+.right .coffeehouse .coffee-m ul li:nth-child(4) {
+    background: url(../img/coffee4.jpg) no-repeat 0 0 / 288px 168px;
+}
+
+.right .coffeehouse .coffee-m ul li:nth-child(5) {
+    background: url(../img/coffee1.jpg) no-repeat 0 0 / 288px 168px;
+}
+
+.right .coffeehouse .coffee-m ul li span {
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #c2a611;
+    font-size: 14px;
+}
+
+.right .coffeehouse .coffee-m ul li p {
+    margin-top: 150px;
+}
+
+.right .coffeehouse .coffee-m .last,
+.right .coffeehouse .coffee-m .next {
+    position: absolute;
+    top: 80px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.right .coffeehouse .coffee-m .last {
+    left: 20px;
+    background: url(../img/last.svg) no-repeat center center / 24px 24px #fff;
+}
+
+.right .coffeehouse .coffee-m .last:hover {
+    cursor: pointer;
+    background-color: rgba(127, 255, 212, 0.418);
+}
+
+.right .coffeehouse .coffee-m .next {
+    right: 20px;
+    background: url(../img/next.svg) no-repeat center center / 24px 24px #fff;
+}
+
+.right .coffeehouse .coffee-m .next:hover {
+    cursor: pointer;
+    background-color: rgba(127, 255, 212, 0.418);
+}
+
+.right .footer-nav {
+    margin-top: 180px;
+    text-align: center;
+    color: #0000006b !important;
+
+}
+
+.right .footer-nav a:nth-of-type(1) {
+    padding-left: 20px;
+    background: url(../img/icpicon.png) no-repeat 0 center / 20px 20px;
+}
+
+.right .footer-menu {
+    display: none;
+    box-sizing: border-box;
+    padding: 6px 4px;
+    width: 100%;
+    height: 55px;
+}
+
+.right .footer-menu ul {
+    display: flex;
+}
+
+.right .footer-menu ul li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.right .footer-menu ul li img {
+    margin-bottom: 4px;
+}
+
+.right .footer-menu ul span:nth-of-type(1) {
+    color: #4ed89e;
+    font-weight: bolder;
+}
+
+/* 小屏幕媒体查询 */
+@media screen and (max-width: 640px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right .right-head {
+        display: none;
+    }
+
+    .right-head-min {
+        display: block;
+    }
+
+    .club {
+        height: 351px !important;
+    }
+
+    .club-main {
+        padding: 0 16px;
+        width: 100% !important;
+        height: 351px !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .club-main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .club-main div span,
+    .club-main div h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .club-main div p {
+        text-align: center;
+    }
+
+    .club-main div:nth-of-type(1) {
+        padding: 0 !important;
+        padding-top: 24px !important;
+    }
+
+    .club-main div:nth-of-type(2) {
+        position: static !important;
+    }
+
+    .selected {
+        height: 672px !important;
+    }
+
+    .selected .select-m {
+        padding: 0 16px;
+        width: 100% !important;
+    }
+
+    .selected .select-m ul li {
+        width: 50% !important;
+    }
+
+    .footer-menu {
+        display: block !important;
+        position: fixed;
+        bottom: 0;
+        background-color: #fff;
+    }
+}
+
+/* 中屏幕媒体查询 */
+@media screen and (min-width: 641px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right-head-min {
+        display: none;
+    }
+
+    .club-main {
+        box-sizing: border-box;
+        padding: 0 16px;
+        width: 638px !important;
+    }
+
+    .selected .select-m {
+        width: 100%;
+    }
+
+    .selected .select-m ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* 大屏幕媒体查询 */
+@media screen and (min-width: 1200px) {
+    .left {
+        display: block;
+        width: 30%;
+    }
+
+    .right {
+        margin-left: 30%;
+        width: 70%;
+    }
+
+    .right .right-head {
+        display: none;
+    }
+
+    .right-head-min {
+        display: none;
+    }
+
+    .club .club-main {
+        width: 768px !important;
+    }
+
+    .club .club-main div:nth-of-type(2) {
+        position: absolute;
+        right: 0;
+    }
+
+    .selected {
+        display: flex;
+        justify-content: center;
+    }
+
+    .selected .select-m {
+        padding: 0 24px;
+        width: 792px;
+    }
+
+    .coffeehouse {
+        padding: 36px 0;
+        height: 418px;
+    }
+
+    .coffeehouse h4 {
+        width: 768px;
+        height: 73px;
+    }
+}
